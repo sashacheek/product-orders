@@ -1,0 +1,212 @@
+/* Sasha Cheek Sept 9 2023*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+
+body {
+    background-image: url(img/background_img.avif);
+    height: 100vh;
+    margin: 0;
+}
+
+form, form input, form select, div, span {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 60%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.wrapper {
+    padding: 3%;
+}
+
+#current_datetime {
+    text-align: center;
+    padding: 1em;
+}
+
+form {
+    display: table;
+    width: 100%;
+}
+
+form div {
+    display: table-row;
+}
+
+form label, .form-left {
+    display: table-cell;
+    padding: 0.5em;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+}
+
+form input, form textarea, form select {
+    display: table-cell;
+    margin: 0.5em 0;
+    box-sizing:border-box;
+}
+
+form span {
+    color: red;
+    font-size: 70%;
+    display: block;
+    margin-bottom: 0.5em;
+    width: 60%;
+}
+
+#character_count {
+    color: gray;
+    text-align: right;
+    width: 100%;
+}
+
+.button {
+    border: 3px solid #b7b9ab;
+    border-radius: 2px;
+    background-color: white;
+    padding: 4px 6px;
+    margin-right: 0.5em;
+}
+.button:hover{
+    box-shadow: 3px 3px #b7b9ab;
+    background-color: #fafaf9;
+}
+
+.output {
+    padding: 0.5em;
+    text-align: center;
+}
+
+/* Homepage */
+#interior-images {
+    height: 30vw;
+    width: 40vw;
+    max-width: 720px;
+    max-height: 540px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+h1 {
+    text-align: center;
+    /* text-decoration: underline; */
+    font-family: serif;
+    font-size: 150%;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em;
+}
+
+nav {
+    margin-bottom: 25px;
+}
+
+.categories {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.clear {
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+nav ul, nav li, nav a {
+    margin: 0;
+    padding: 0;
+}
+
+.category {
+    border: solid 1px #b7b9ab;
+    background-color: #fafaf9;
+    text-align: center;
+    width: 47%;
+    float: left;
+}
+
+.category-list {
+    display: none;
+    border-top: 1px solid #b7b9ab;
+    text-align: center;
+}
+
+/* nav li {
+    padding: px;
+} */
+
+/* nav ul li:hover ul {
+    display: block;
+    position: relative;
+} */
+
+nav a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    font-size: 75%;
+    margin-top: 2em;
+}
+
+/* ORDER_PROCESS.PHP */
+
+.order-confirmation {
+    text-align: center;
+}
+
+#order-table {
+    margin: 15px auto;
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+#order-table td {
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.category-display {
+    font-weight: bold;
+    text-align: right;
+}
+
+@media screen and (max-width:500px) {
+    main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:335px) {
+    form {
+        display: block;
+    }
+    
+    form div {
+        display: block;
+        margin: 0 0.5em;
+    }
+    
+    form label {
+        display: block;
+        text-align: left;
+    }
+    
+    form input {
+        display: block
+    }
+}
